@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="main container-fluid">
+    <div class="row">
+        <!--        sidebar start-->
+        <div class="col-12 col-lg-3 col-xl-2 vh-100 sidebar">
+            <div class="d-flex justify-content-between align-items-center py-2 mt-3 nav-brand">
+                <div class="d-flex align-items-center">
+                    <span class="bg-primary p-2 rounded d-flex justify-content-center align-items-center mr-2">
+                        <i class="feather-shopping-bag text-white h4 mb-0"></i>
+                    </span>
+                    <span class="font-weight-bolder h4 mb-0 text-uppercase text-primary">My Shop</span>
+                </div>
+                <button class="hide-sidebar-btn btn btn-light d-block d-lg-none">
+                    <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                </button>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class="menu-spacer"></li>
+
+                    <li class="menu-item">
+                        <a href="dashboard.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-home"></i>
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="plane.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-shopping-bag"></i>
+                                Today Orders
+                            </span>
+                            <span class="badge badge-pill bg-white shadow-sm text-primary">15</span>
+
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="plane.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-grid"></i>
+                                Recent Items
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="plane.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-pie-chart"></i>
+                                Data Analysis
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="plane.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-file"></i>
+                                Plane Page
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="menu-spacer"></li>
+
+
+
+
+                    <li class="menu-title">
+                        <span>Item Management</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="item_add.html" class="menu-item-link active">
+                            <span>
+                                <i class="feather-plus-circle"></i>
+                                Create New Item
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="item_list.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-server"></i>
+                                Item Lists
+                            </span>
+                            <span class="badge badge-pill bg-white shadow-sm text-primary">57</span>
+                        </a>
+                    </li>
+                    <li class="menu-spacer"></li>
+
+                    <li class="menu-title">
+                        <span>User Management</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-user-plus"></i>
+                                Create User
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="item_list.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-users"></i>
+                                Manage User
+                            </span>
+                            <span class="badge badge-pill bg-white shadow-sm text-primary">100</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-user-minus"></i>
+                                Baned User
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-bar-chart"></i>
+                                User Analysis
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-spacer"></li>
+
+
+                    <li class="menu-title">
+                        <span>Inventory</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-file-plus"></i>
+                                Create New Stock
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-list"></i>
+                                All Stock
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="item_list.html" class="menu-item-link">
+                            <span>
+                                <i class="feather-file-minus"></i>
+                                Out of Stock
+                            </span>
+                            <span class="badge badge-pill bg-white shadow-sm text-primary">16</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-bar-chart-2"></i>
+                                Stock Analysis
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-spacer"></li>
+
+                    <li class="menu-title">
+                        <span>Your Profile</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-lock"></i>
+                                Change Password
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <span>
+                                <i class="feather-user-check"></i>
+                                Edit Profile
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+        <!--        sidebar end-->
+        <div class="col-12 col-lg-9 col-xl-10 vh-100 py-3 content">
+            <div class="row header mb-4">
+                <div class="col-12">
+                    <div class="p-2 bg-primary d-flex justify-content-between align-items-center rounded">
+                        <button class="show-sidebar-btn btn btn-primary d-block d-lg-none">
+                            <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                        </button>
+                        <form action="" method="post" class="d-none d-md-block">
+                            <div class="form-inline">
+                                <input type="text" class="form-control mr-2" placeholder="Search Everything">
+                                <button class="btn btn-light">
+                                    <i class="feather-search text-primary"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="img/user/me.jpg" class="user-img shadow-sm" alt=""> Hein Htet Zan
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content Area Start-->
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white mb-4">
+                            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="item_list.html">Item</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Add Item</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">
+                                    <i class="feather-plus-circle text-primary"></i> Add Item
+                                </h4>
+                                <a href="item_list.html" class="btn btn-outline-primary">
+                                    <i class="feather-list"></i>
+                                </a>
+                            </div>
+                            <hr>
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label for="photo">
+                                                Photo Upload
+                                            </label>
+                                            <i class="feather-info" data-container="body" data-toggle="popover" data-placement="top" data-content="Only Support Jpg, Png"></i>
+
+                                            <input type="file" name="photo" id="photo" class="form-control p-1" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Item Name</label>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="t">Item Type</label>
+                                            <select name="type" class="form-control custom-select" id="t">
+                                                <option value="0">ကုန်ဆို</option>
+                                                <option value="1">ကုန်ခြောက်</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="c">Category</label>
+                                            <select name="type" class="form-control custom-select" id="c">
+                                                <option value="" selected>Select Category</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sc">Sub Category</label>
+                                            <select name="type" class="form-control custom-select" id="sc">
+                                                <option value="" selected>Select Sub Category</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="q">Item Quantity</label>
+                                                <input type="text" name="q" class="form-control" id="q">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="type">Unit</label>
+                                                    <select name="type" class="form-control custom-select" id="type">
+                                                        <option value="0">ကုန်ဆို</option>
+                                                        <option value="1">ကုန်ခြောက်</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="price">Price</label>
+                                            <input type="number" id="price" name="price" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="des">Description</label>
+                                            <textarea type="text" id="des" name="des" rows="8" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <button class="btn btn-primary">Add Item</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--content Area Start-->
+        </div>
+    </div>
+</section>
+<script src="vendor/jquery.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+
+    let category = ["phone","computer","TV"];
+    let subCategory = [
+        {name:"Samsung",category_id:0},
+        {name:"Mi",category_id: 0},
+        {name: "Hp",category_id: 1},
+        {name: "Acer",category_id: 1},
+        {name: "Panasonic",category_id: 2}
+    ];
+
+
+    category.map(function (el,index) {
+        $("#c").append(`<option value="${index}">${el}</option>`);
+    });
+
+    subCategory.map(function (el,index) {
+        $("#sc").append(`<option value="${index}" data-category="${el.category_id}">${el.name}</option>`);
+    });
+
+    $("#c").on("change",function () {
+        let currentCategoryId = $(this).val();
+        $("#sc option").hide();
+        $(`[data-category=${currentCategoryId}]`).show();
+    });
+
+</script>
+</body>
+</html>
